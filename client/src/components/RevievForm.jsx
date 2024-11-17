@@ -12,7 +12,7 @@ function ReviewForm({ movieId, onAddReview }) {
     try {
       // Send a POST request to add a new review
       const response = await fetch(
-        `http://localhost:8080/movies/${movieId}/reviews`,
+        `https://movie-reviews-app-server.onrender.com/movies/${movieId}/reviews`,
         {
           method: "POST",
           headers: {
