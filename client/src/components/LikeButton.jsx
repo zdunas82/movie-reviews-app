@@ -1,4 +1,4 @@
-import { ThumbsUp } from "react-icons/fa";
+import { FaThumbsUp } from "react-icons/fa";
 
 export default function LikeButton({ secret, liked, numLikes, onSelect }) {
   return (
@@ -8,7 +8,7 @@ export default function LikeButton({ secret, liked, numLikes, onSelect }) {
         className={`like-button ${liked ? "liked" : ""}`}
         onClick={onSelect} // invoked when clicked
       >
-        <ThumbsUp />
+        <FaThumbsUp />
         <span className="like-text">{liked ? "Liked" : "Like"}</span>
       </div>
       <p className="like-count">
