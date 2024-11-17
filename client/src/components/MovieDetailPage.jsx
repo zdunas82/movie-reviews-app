@@ -30,7 +30,7 @@ function MovieDetailPage() {
     async function fetchMovieReviews() {
       try {
         const response = await fetch(
-          `http://localhost:8080/movies/${id}/reviews`
+          `https://movie-reviews-app-server.onrender.com/movies/${id}/reviews`
         );
         if (response.ok) {
           const data = await response.json();
